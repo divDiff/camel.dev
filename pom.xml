@@ -12,13 +12,14 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <camel.version>2.20.1</camel.version>
   </properties>
 
   <dependencies>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-core</artifactId>
-            <version>2.20.1</version>
+            <version>${camel.version}</version>
         </dependency>
 
         <!-- Logging -->
@@ -40,7 +41,7 @@
         <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-xstream</artifactId>
-        <version>2.20.1</version>
+        <version>${camel.version}</version>
         </dependency>
 
         <!--XML2JSON-->
@@ -48,7 +49,7 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-xmljson</artifactId>
-            <version>2.20.1</version>
+            <version>${camel.version}</version>
         </dependency>
 
         <dependency>
@@ -106,7 +107,7 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-gson</artifactId>
-            <version>2.20.1</version>
+            <version>${camel.version}</version>
         </dependency>
 
 
