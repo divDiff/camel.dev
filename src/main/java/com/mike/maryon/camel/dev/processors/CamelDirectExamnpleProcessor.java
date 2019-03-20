@@ -5,7 +5,6 @@ import org.apache.camel.Processor;
 
 public class CamelDirectExamnpleProcessor implements Processor {
 
-	@Override
 	public void process(Exchange exchange) throws Exception {
 		try {
 			String oldValue = (String) exchange.getIn().getBody();
