@@ -5,4 +5,9 @@ public class CamelBean {
 		String newBody = input.replace(",", "*");
 		return newBody;
 	}
+	public String  map1(String input) {
+		System.out.println("Inside Map1");
+		String newBody = input.replace(",", "*");
+		return newBody;
+	}
 }

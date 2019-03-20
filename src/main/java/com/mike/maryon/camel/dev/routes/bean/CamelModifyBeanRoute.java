@@ -10,7 +10,7 @@ public class CamelModifyBeanRoute extends RouteBuilder {
 	public void configure() throws Exception {
 		from("direct:beanInput")
 			.log("Changed Message before bean is : ${body}")
-			.bean(new CamelBean())
+			.bean(new CamelBean(), "map1")
 			.log("Changed Message after bean is : ${body}")
 		.to("mock:output");
 		
