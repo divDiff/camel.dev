@@ -18,10 +18,10 @@ public class MarshalUsingGsonRouteTest extends AbstractCamelTest {
 	public void marshalUsingGsonTest() {
 		Employee emp = new Employee();
 		emp.setId("1");
-		emp.setName("mike)");
+		emp.setName("mike");
 		emp.setJoinDate("30Mar2019");
 		String empJson = template.requestBody("direct:marshalGson", emp, String.class);
-		String expected = "{\"id\":\"1\",\"name\":\"mike)\",\"joinDate\":\"30Mar2019\"}";		
+		String expected = "{\"id\":\"1\",\"name\":\"mike\",\"joinDate\":\"30Mar2019\"}";		
 		assertEquals(expected, empJson);
 	}
 }
