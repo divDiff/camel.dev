@@ -19,7 +19,11 @@ public class Employee {
 	public String getJoinDate() {
 		return joinDate;
 	}
-	public void setJoinDate(String joinDate) {
+	public void setJoinDate(String  joinDate) {
 		this.joinDate = joinDate;
+	}
+	
+	public String toString() {
+		return this.id + " " + this.name + " " + this.joinDate;
 	}
 }

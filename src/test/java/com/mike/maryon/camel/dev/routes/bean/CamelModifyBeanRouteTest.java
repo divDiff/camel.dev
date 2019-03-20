@@ -1,10 +1,11 @@
 package com.mike.maryon.camel.dev.routes.bean;
 
 import org.apache.camel.RoutesBuilder;
-import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
-public class CamelModifyBeanRouteTest extends CamelTestSupport {
+import com.mike.maryon.camel.dev.util.AbstractCamelTest;
+
+public class CamelModifyBeanRouteTest extends AbstractCamelTest {
 	@Override
 	public RoutesBuilder createRouteBuilder() {
 		return new CamelModifyBeanRoute();

@@ -2,10 +2,11 @@ package com.mike.maryon.camel.dev.routes.transform;
 
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
-import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
-public class CamelModifyTransformRouteTest extends CamelTestSupport {
+import com.mike.maryon.camel.dev.util.AbstractCamelTest;
+
+public class CamelModifyTransformRouteTest extends AbstractCamelTest {
 	@Override
 	public RoutesBuilder createRouteBuilder() {
 		return new CamelModifyTransformRoute(); 

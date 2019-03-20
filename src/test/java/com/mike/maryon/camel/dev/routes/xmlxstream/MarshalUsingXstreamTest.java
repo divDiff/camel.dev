@@ -2,10 +2,11 @@ package com.mike.maryon.camel.dev.routes.xmlxstream;
 
 import org.apache.camel.RoutesBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
-import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
-public class MarshalUsingXstreamTest extends CamelTestSupport {
+import com.mike.maryon.camel.dev.util.AbstractCamelTest;
+
+public class MarshalUsingXstreamTest extends AbstractCamelTest {
 	@Override
 	public RoutesBuilder createRouteBuilder() {
 		return new MarshalUsingXstream();

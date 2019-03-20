@@ -4,12 +4,11 @@ import java.io.File;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.mock.MockEndpoint;
-import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
-import com.mike.maryon.camel.dev.routes.process.CamelModifyFileProcessorRoute;
+import com.mike.maryon.camel.dev.util.AbstractCamelTest;
 
-public class CamelModifyFileProcessorRouteTest extends CamelTestSupport {
+public class CamelModifyFileProcessorRouteTest extends AbstractCamelTest {
 
 	@Override
 	public RouteBuilder createRouteBuilder() {
