@@ -14,6 +14,11 @@ public class CsvEmployee {
 	@DataField(pos = 3)
 	private String lastName;
 	
+	@Override
+	public String toString() {
+		return "Employee{id="+id +" firstname=" + firstName + " lastName=" + lastName + "}"; 
+	}
+	
 	public String getId() {
 		return id;
 	}
